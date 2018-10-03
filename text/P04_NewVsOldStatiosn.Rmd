@@ -1,0 +1,19 @@
+---
+#title: "P04 new vs old stations"
+# author: "Joshua Mumm"
+# date: "October 3, 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![Survey-wide CPUE (+/- 1 SE) of large spot shrimp (CL>32mm) in old vs new stations, PWS pot survey. New stations were added in 2016 when layout changed from 4 11-pot stations per site to 8 5-pot stations per site.](../figs/surveyWideCPUE_lbs_newVsOld_Lrg.png)
+
+![Survey-wide CPUE of all sizes in old vs new stations.](../figs/surveyWideCPUE_lbs_newVsOld_ALL.png)
+
+
+![By-area CPUE of larges in old vs new stations.](../figs/byAreaCPUE_lbs_newVsOld_Lrg.png)
+
+![By-area CPUE of all sizes in old vs new stations.](../figs/byAreaCPUE_lbs_newVsOld_All.png)
