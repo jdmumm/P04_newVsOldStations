@@ -18,7 +18,8 @@ read.csv("output/long_lbs.csv") -> long #cpue and se, surveywide, new and old st
 read.csv("output/long_lbs_byArea.csv") ->long_byArea #cpue and se, by area, new and old stations. From byArea_xz_w17_old.csv and byArea_xz_w17_new.csv. 
 
 #SURVEY_WIDE ####
-long %>% transmute( Year = as.factor(year), Stations = stations, Size = size, cpue, se) -> dat
+long %>% transmute( Year = as.factor(year), Stations = stations, Size = size, cpue, se) -> dat 
+dat$Stations <-  factor(dat$Stations, levels = c("old", "new")) # reorder old on left
 
 dat %>% filter (Size == "lrg") -> lrg
 dat %>% filter (Size == "all") -> all 
@@ -41,7 +42,8 @@ all %>%
   
 #BY_AREA ####
 long_byArea %>% transmute(Area = as.factor(area), Year = as.factor(year), Stations = stations, Size = size, cpue, se) -> dat_byArea
-
+dat_byArea$Stations <-  factor(dat_byArea$Stations, levels = c("old", "new")) # reorder old on left
+  
 dat_byArea %>% filter (Size == "lrg") -> lrg_byArea
 dat_byArea %>% filter (Size == "all") -> all_byArea
 
