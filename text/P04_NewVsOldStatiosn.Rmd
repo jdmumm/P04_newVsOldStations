@@ -9,7 +9,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-![Survey-wide CPUE (+/- 1 SE) of large spot shrimp (CL>32mm) in old vs new stations, PWS pot survey. New stations were added in 2016 when layout changed from 4 11-pot stations per site to 8 5-pot stations per site.](../figs/surveyWideCPUE_lbs_newVsOld_Lrg.png)
+![Survey-wide CPUE (+/- 95% CI) of large spot shrimp (CL>32mm) in old vs new stations, PWS pot survey. New stations were added in 2016 when layout changed from 4 11-pot stations per site to 8 5-pot stations per site.](../figs/surveyWideCPUE_lbs_newVsOld_Lrg.png)
 
 ![Survey-wide CPUE of all sizes in old vs new stations.](../figs/surveyWideCPUE_lbs_newVsOld_ALL.png)
 
