@@ -29,7 +29,7 @@ lrg %>%
   scale_y_continuous(breaks = seq(0,5,.5), lim = c(0,3.5)) +
   geom_point(position=position_dodge(.3)) +
   geom_errorbar(aes(ymin= cpue - (1.96 * se), ymax = cpue + (1.96 * se)), width =.2, position=position_dodge(.3)) + 
-  labs( title = "Survey-wide, Larges", x = "Year", y = "CPUE (lbs/pot)")
+  labs( title = "Survey wide, Larges", x = "Year", y = "CPUE (lbs/pot)")
   ggsave("./figs/surveyWideCPUE_lbs_newVsOld_Lrg.png", dpi=300, height=3.75, width=6.5, units="in")
 
 all %>% 
@@ -37,7 +37,7 @@ all %>%
   scale_y_continuous(breaks = seq(0,8.0,.5), lim = c(0,8.0)) +
   geom_point(position=position_dodge(.3)) +
   geom_errorbar(aes(ymin= cpue - (1.96 * se), ymax = cpue + (1.96 * se)), width =.2, position = position_dodge(.3) ) + 
-  labs( title = "Survey-wide, All", x = "Year", y = "CPUE (lbs/pot)")
+  labs( title = "Survey wide, All", x = "Year", y = "CPUE (lbs/pot)")
   ggsave("./figs/surveyWideCPUE_lbs_newVsOld_All.png", dpi=300, height=3.75, width=6.5, units="in")
   
 #BY_AREA ####
